@@ -1,0 +1,154 @@
+.jobsPage {
+  min-height: 100vh;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+  color: var(--text-light);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.pageSubtitle {
+  font-size: 1.5rem;
+  opacity: 0.95;
+}
+
+.jobContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.jobImage {
+  position: sticky;
+  top: 20px;
+}
+
+.jobPostImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.jobInfo {
+  line-height: 1.8;
+}
+
+.jobInfo h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.jobInfo p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.contactBox {
+  background: var(--bg-light);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px 0;
+  border-left: 4px solid var(--primary-green);
+}
+
+.contactBox h3 {
+  color: var(--primary-green);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contactBox p {
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.contactBox a {
+  color: var(--primary-green);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contactBox a:hover {
+  color: var(--dark-green);
+  text-decoration: underline;
+}
+
+.excitement {
+  font-size: 1.2rem;
+  color: var(--primary-green);
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.whyJoin {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.whyJoin h3 {
+  color: var(--primary-green);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.whyJoin ul {
+  list-style: none;
+  padding: 0;
+}
+
+.whyJoin li {
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+.whyJoin li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 968px) {
+  .jobContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .jobImage {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .pageSubtitle {
+    font-size: 1.2rem;
+  }
+}
+
